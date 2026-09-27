@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narayanaswamy C — CS Undergraduate &amp; Developer</title>
+  <meta name="description" content="Narayanaswamy C — Computer Science undergraduate at LICET building full-stack products and computer-vision models. 300+ LeetCode problems, YOLO-OBB internship, React, Flask, Spring Boot.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // mark JS availability early so no-JS users still get visible content
+    document.documentElement.classList.add('js');
+  </script>
+  <noscript>
+    <style>
+      .intro-bg, .name-layer, .transition-panel, .reveal-image-wrap { display: none !important; }
+      .hero { opacity: 1 !important; }
+      .hero-tagline, .hero-bar, .hero-status { opacity: 1 !important; clip-path: none !important; }
+      #footer { visibility: visible !important; position: relative !important; height: auto !important; min-height: 100vh; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ======================== INTRO / PRELOADER ======================== -->
+  <div class="intro-bg" id="intro-bg"></div>
+
+  <div class="name-layer" id="name-layer">
+    <div class="preloader-content" id="preloader-content">
+      <div id="preloader-logo">N</div>
+      <span id="preloader-luke">arayanaswamy</span>
+      <span id="preloader-baffait"> C</span>
+      <span id="preloader-dot">.</span>
+    </div>
+  </div>
+
+  <div class="transition-panel" id="transition-panel">
+    <div class="t-panel-dark" id="t-panel-dark"></div>
+    <div class="t-panel-red" id="t-panel-red"></div>
+  </div>
+
+  <!-- ======================== PINNED HERO ======================== -->
+  <div class="scroll-wrap" id="scroll-wrap">
+    <section class="hero" id="hero">
+      <h1 class="sr-only">Narayanaswamy C — Computer Science undergraduate, full-stack developer and computer-vision tinkerer from Chennai, India.</h1>
+      <div class="hero-canvas" id="hero-canvas"></div>
+
+      <div class="hero-content">
+        <div class="hero-tagline" id="hero-tagline">
+          Practical by habit, <span class="acc">precise by obsession</span> —<br>
+          I build tools, dashboards and models that ship.
+        </div>
+
+        <div class="hero-status" id="hero-status">
+          <div><b>300+</b> leetcode</div>
+          <div><b>8.7</b> cgpa</div>
+          <div><span class="red">●</span> open to 2028 internships</div>
+        </div>
+
+        <div class="hero-line" id="hero-line"></div>
+        <div class="hero-bar" id="hero-bar">
+          <div class="hero-bar-left">
+            <span class="chr-hover" data-chr="Chennai, IN — 13.08°N"></span>
+          </div>
+          <nav class="hero-bar-center" aria-label="Social links">
+            <a class="chr-hover" data-chr="GitHub" href="https://github.com/nasa777-debug" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="chr-hover" data-chr="LinkedIn" href="https://www.linkedin.com/in/narayanaswamy-chandrasekaran-a7a011331/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+            <span class="sep" aria-hidden="true">/</span>
+            <a class="chr-hover" data-chr="LeetCode" href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"></a>
+          </nav>
+          <nav class="hero-bar-right" aria-label="Section navigation">
+            <a class="chr-hover" data-chr="Work" href="#projects" data-scroll-to="projects" aria-label="Projects"></a>
+            <a class="chr-hover" data-chr="Skills" href="#skills" data-scroll-to="skills" aria-label="Skills"></a>
+            <a class="chr-hover" data-chr="Contact" href="#contact" data-scroll-to="contact" aria-label="Contact"></a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======================== REVEAL OVERLAY (scroll-driven) ======================== -->
+  <div class="reveal-image-wrap" id="reveal-image-wrap">
+    <canvas class="reveal-image reveal-seq" id="reveal-canvas"></canvas>
+    <div class="reveal-frame reveal-seq">
+      <span class="reveal-corner tl"></span>
+      <span class="reveal-corner tr"></span>
+      <span class="reveal-corner bl"></span>
+      <span class="reveal-corner br"></span>
+    </div>
+    <div class="reveal-overlay" id="reveal-overlay"></div>
+    <p class="reveal-phrase" id="reveal-phrase">Basically, I build <span class="acc">systems that ship.</span></p>
+  </div>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="section-after" id="section-after">
+    <div class="about" id="about">
+      <div class="about-text" id="about-text">
+        As a <span class="acc">builder at heart</span>, I engineer full-stack products, train vision models and solve DSA problems — with care for every detail.
+      </div>
+      <div class="about-sub" id="about-sub">
+        I'm Narayanaswamy C, a Computer Science undergraduate at Loyola-ICAM College of Engineering and Technology,
+        Chennai — strong foundations in Data Structures &amp; Algorithms, Object-Oriented Programming, Full-Stack
+        Development and Computer Vision. Currently training YOLO-OBB detection models as a Computer Vision
+        Intern at Lesoko Technologies.
+      </div>
+      <div class="about-stats" id="about-stats">
+        <div class="stat"><b><i>300+</i></b><span class="mono">LeetCode problems</span></div>
+        <div class="stat"><b><i>8.7</i></b><span class="mono">CGPA / 10</span></div>
+        <div class="stat"><b><i>80%</i></b><span class="mono">mAP@50 · YOLO-OBB</span></div>
+      </div>
+      <div class="about-version">
+        <svg viewBox="0 0 84 85" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z"/></svg>Resume&nbsp;V3
+      </div>
+      <div class="about-photo-wrap" id="about-photo-wrap">
+        <img class="about-photo" id="about-photo" alt="Terminal profile card of Narayanaswamy C" width="900" height="1125" decoding="async">
+      </div>
+    </div>
+
+    <!-- ======================== PROJECTS ======================== -->
+    <div class="projects" id="projects">
+      <svg class="fluid-line-svg" id="fluid-line-svg" viewBox="0 0 1400 1400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path class="fluid-line" id="fluid-line" d="
+          M -80,0
+          C 300,-20  600,150  540,400
+          C 490,650   0,655    300,1050
+          C 600,1385 650,1250 850,1200
+          C 1050,1150 1350,1250 1540,1300
+        " />
+      </svg>
+
+      <div class="projects-head">
+        <span class="mono">01 — Selected Work</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-inner">
+        <div class="projects-list" id="projects-list">
+          <div class="proj-item" data-id="india-web-usage" data-paint="0" data-date="2025">
+            <span class="proj-idx">01</span>India Web Usage Platform</div>
+          <div class="proj-item" data-id="stock-analyzer" data-paint="1" data-date="2025">
+            <span class="proj-idx">02</span>Stock Analyzer</div>
+          <div class="proj-item" data-id="bootup" data-paint="2" data-date="2026">
+            <span class="proj-idx">03</span>Bootup — Linux Mobile OS</div>
+          <div class="proj-item" data-id="calm-canvas" data-paint="3" data-date="2025">
+            <span class="proj-idx">04</span>Calm Canvas</div>
+          <div class="proj-item" data-id="vision-obb" data-paint="4" data-date="2026">
+            <span class="proj-idx">05</span>YOLO-OBB Vision Lab</div>
+          <div class="proj-item" data-id="leetcode-arena" data-paint="5" data-date="2024—now">
+            <span class="proj-idx">06</span>DSA / LeetCode Grind</div>
+        </div>
+      </div>
+
+      <div class="proj-preview" id="proj-preview" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ======================== CIRCLE GALLERY ======================== -->
+  <section class="circle-gallery" id="circle-gallery" aria-hidden="true">
+    <div class="circle-gallery-pin" id="circle-gallery-pin">
+      <div class="cg-img" data-paint="0"></div>
+      <div class="cg-img" data-paint="1"></div>
+      <div class="cg-img" data-paint="2"></div>
+      <div class="cg-img" data-paint="3"></div>
+      <div class="cg-img" data-paint="4"></div>
+      <div class="cg-img" data-paint="5"></div>
+      <p class="cg-phrase" id="cg-phrase">Each project is a chance to <span class="acc">learn</span>, to <span class="acc">experiment</span>, and to push my own limits.</p>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section class="skills" id="skills">
+    <div class="skills-inner">
+      <div class="skills-left">
+        <div class="skills-subtitle">Capabilities</div>
+        <div class="skills-text" id="skills-text">
+          CS undergrad at LICET, Chennai — training vision models, crafting full-stack products and sharpening DSA, one commit at a time.
+        </div>
+        <div class="skills-separator"></div>
+        <div><a class="skills-contact chr-hover" data-chr="Contact me ↓" href="mailto:deva02072007@gmail.com" aria-label="Email me"></a></div>
+        <div class="skills-arrow" id="skills-arrow" aria-hidden="true">
+          <svg viewBox="0 0 84 85" xmlns="http://www.w3.org/2000/svg"><path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z"/></svg>
+        </div>
+      </div>
+
+      <div class="skills-right" id="skills-right">
+        <div class="skill-group open" data-group="languages">
+          <div class="skill-header"><span class="skill-header-title">Languages</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>Python<em>Primary</em></li>
+            <li>Java<em>OOP · Spring Boot</em></li>
+            <li>C<em>Systems</em></li>
+            <li>SQL<em>Queries · PL/SQL</em></li>
+            <li>HTML / CSS<em>Layout</em></li>
+          </ul></div>
+        </div>
+        <div class="skill-group" data-group="frameworks">
+          <div class="skill-header"><span class="skill-header-title">Frameworks</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>React<em>Dashboards · UI</em></li>
+            <li>Flask<em>REST · Templates</em></li>
+            <li>Spring Boot<em>Analytics APIs</em></li>
+            <li>Tailwind CSS<em>Styling</em></li>
+            <li>Recharts<em>Visualisation</em></li>
+          </ul></div>
+        </div>
+        <div class="skill-group" data-group="ml">
+          <div class="skill-header"><span class="skill-header-title">ML &amp; Computer Vision</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>YOLO-OBB<em>80% mAP@50</em></li>
+            <li>OpenCV<em>Image processing</em></li>
+            <li>NumPy<em>Vectorised math</em></li>
+            <li>Pandas<em>Data wrangling</em></li>
+            <li>Matplotlib<em>Plots</em></li>
+          </ul></div>
+        </div>
+        <div class="skill-group" data-group="fundamentals">
+          <div class="skill-header"><span class="skill-header-title">CS Fundamentals</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>Data Structures &amp; Algorithms<em>300+ problems</em></li>
+            <li>Object-Oriented Programming<em></em></li>
+            <li>DBMS<em>MySQL</em></li>
+            <li>Operating Systems<em></em></li>
+          </ul></div>
+        </div>
+        <div class="skill-group" data-group="tools">
+          <div class="skill-header"><span class="skill-header-title">Tools &amp; Environment</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>Git &amp; GitHub<em>Version control</em></li>
+            <li>Linux<em>Daily driver</em></li>
+            <li>Google Colab<em>GPU training</em></li>
+            <li>Anaconda<em>Environments</em></li>
+            <li>VS Code<em>Editor</em></li>
+          </ul></div>
+        </div>
+        <div class="skill-group" data-group="certs">
+          <div class="skill-header"><span class="skill-header-title">Certifications</span><span class="skill-header-icon"></span></div>
+          <div class="skill-body"><ul class="skill-body-inner">
+            <li>Red Hat Linux Fundamentals<em>RH104</em></li>
+            <li>IBM Python for Data Science<em></em></li>
+            <li>Oracle Academy SQL &amp; PL/SQL<em></em></li>
+            <li>NPTEL German – I<em></em></li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ACHIEVEMENTS ======================== -->
+  <section class="awards" id="awards">
+    <div class="awards-title">Achievements &amp; Certifications</div>
+    <div class="awards-list" id="awards-list">
+      <div class="award-item" data-paint="3">
+        <div class="award-org">LeetCode</div>
+        <div class="award-name">DSA Problem Solving</div>
+        <div class="award-prize">300+ problems solved</div>
+        <div class="award-date">ongoing</div>
+      </div>
+      <div class="award-item" data-paint="4">
+        <div class="award-org">Lesoko Technologies</div>
+        <div class="award-name">YOLO-OBB Training</div>
+        <div class="award-prize">80% mAP@50 · 75% mAP@50-95</div>
+        <div class="award-date">2026</div>
+      </div>
+      <div class="award-item" data-paint="0">
+        <div class="award-org">LICET</div>
+        <div class="award-name">B.E. Computer Science</div>
+        <div class="award-prize">CGPA 8.7 / 10</div>
+        <div class="award-date">2028*</div>
+      </div>
+      <div class="award-item" data-paint="2">
+        <div class="award-org">Modern Senior Sec. School</div>
+        <div class="award-name">HSC · SSLC</div>
+        <div class="award-prize">88% · 90.8%</div>
+        <div class="award-date">—</div>
+      </div>
+      <div class="award-item" data-paint="1">
+        <div class="award-org">Certifications</div>
+        <div class="award-name">IBM Python for Data Science</div>
+        <div class="award-prize">Red Hat RH104 · Oracle · NPTEL</div>
+        <div class="award-date">—</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact" id="contact">
+    <div class="contact-pin" id="contact-pin">
+      <div class="contact-bg" id="contact-bg"></div>
+
+      <div class="contact-blob-wrap" id="contact-blob-wrap">
+        <div class="contact-blob" id="contact-blob"></div>
+      </div>
+
+      <div class="contact-title" id="contact-title">Let's build<br>something<span class="acc">.</span></div>
+
+      <div class="contact-frame" id="contact-frame">
+        <img class="contact-frame-img" id="contact-frame-img" alt="" aria-hidden="true">
+        <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+      </div>
+      <div class="contact-dispo" id="contact-dispo">
+        <p>Open to <span class="acc">internships</span> from 2028 — full-stack, computer vision or anything with hard problems.</p>
+      </div>
+      <div class="contact-frame" id="contact-frame-2">
+        <img class="contact-frame-img" id="contact-frame-img-2" alt="" aria-hidden="true">
+        <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+      </div>
+      <div class="contact-dispo" id="contact-dispo-2">
+        <p>Also up for <span class="acc">freelance</span> missions and collaborations across the globe.</p>
+      </div>
+
+      <div class="contact-bottom">
+        <div class="contact-socials" id="contact-socials">
+          <a class="chr-hover" data-chr="GitHub ↗" href="https://github.com/nasa777-debug" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
+          <a class="chr-hover" data-chr="LinkedIn ↗" href="https://www.linkedin.com/in/narayanaswamy-chandrasekaran-a7a011331/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+          <a class="chr-hover" data-chr="+91 86103 12853" href="tel:+918610312853" aria-label="Phone"></a>
+        </div>
+        <a class="contact-mail" id="contact-mail" href="mailto:deva02072007@gmail.com">deva02072007@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <div class="footer-transition" id="footer-transition"></div>
+
+  <footer class="footer" id="footer">
+    <div class="footer-ascii-wrap" aria-hidden="true">
+      <div class="footer-ascii left"><pre id="ascii-left"></pre></div>
+      <div class="footer-ascii right"><pre id="ascii-right"></pre></div>
+    </div>
+
+    <div class="footer-top">
+      <div class="footer-top-col">
+        <a class="chr-hover" data-chr="GitHub ↗" href="https://github.com/nasa777-debug" target="_blank" rel="noopener noreferrer"></a>
+        <a class="chr-hover" data-chr="LinkedIn ↗" href="https://www.linkedin.com/in/narayanaswamy-chandrasekaran-a7a011331/" target="_blank" rel="noopener noreferrer"></a>
+        <a class="chr-hover footer-mail" data-chr="deva02072007@gmail.com" href="mailto:deva02072007@gmail.com"></a>
+      </div>
+      <div class="footer-top-col">
+        <span class="chr-hover" data-chr="© 2026 — Narayanaswamy C"></span>
+        <span class="chr-hover" data-chr="Chennai, India — 13.08°N 80.27°E"></span>
+        <span class="chr-hover" data-chr="Resume V3 — Handcrafted"></span>
+      </div>
+    </div>
+
+    <div class="footer-name" aria-hidden="true">
+      <span class="footer-name-first" id="footer-name-first">N</span>
+      <span class="footer-name-last" id="footer-name-last">arayanaswamyC<span class="footer-name-dot" id="footer-name-dot">.</span></span>
+    </div>
+  </footer>
+
+  <!-- ======================== HUD ======================== -->
+  <div class="scroll-timeline" id="scroll-timeline" aria-hidden="true">
+    <span class="st-label" id="st-label">About</span>
+    <div class="st-bar" id="st-bar"></div>
+  </div>
+  <div class="scroll-pct" id="scroll-pct" aria-hidden="true">(0)</div>
+
+  <!-- ======================== PROJECT DETAIL OVERLAY ======================== -->
+  <div class="project-detail" id="project-detail" aria-hidden="true">
+    <button class="detail-back" id="detail-back"><svg viewBox="0 0 84 85" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z"/></svg><span data-chr-back="Back"></span></button>
+
+    <div class="detail-info">
+      <div class="detail-title-wrap" id="detail-title-wrap">
+        <div class="detail-title" id="detail-title"></div>
+        <span class="detail-year" id="detail-year"></span>
+      </div>
+      <p class="detail-desc" id="detail-desc"></p>
+      <div class="detail-tags" id="detail-tags"></div>
+      <a class="detail-visit" id="detail-visit" target="_blank" rel="noopener noreferrer"><span data-chr-visit="See project ↗"></span></a>
+    </div>
+
+    <div class="detail-gallery-wrap" id="detail-gallery-wrap">
+      <div class="detail-thumbs" id="detail-thumbs">
+        <div class="detail-thumbs-inner" id="detail-thumbs-inner"></div>
+      </div>
+      <div class="detail-selected" id="detail-selected"></div>
+    </div>
+  </div>
+
+  <div class="flying-title" id="flying-title" aria-hidden="true"></div>
+  <div class="page-fade" id="page-fade" aria-hidden="true"></div>
+  <div class="proj-cursor" id="proj-cursor" aria-hidden="true">See project</div>
+
+  <!-- ======================== SCRIPTS ======================== -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
